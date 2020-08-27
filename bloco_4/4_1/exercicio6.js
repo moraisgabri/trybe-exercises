@@ -1,8 +1,9 @@
-const input = 'KING'
+// Escreva um programa que receba o nome de uma peça de xadrez e 
+// retorne os movimentos que ela faz.
 
-let piece = input.toLowerCase()
+const piece = 'KING'
 
-switch (piece) {
+switch (piece.toLowerCase()) {
   case 'pawn':
     console.log('Verticaly one square')
     break

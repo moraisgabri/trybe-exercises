@@ -1,3 +1,7 @@
+// Faça um programa que defina três variáveis com os valores dos três ângulos 
+// internos de um triângulo.Retorne true se os ângulos representarem os 
+// ângulos de um triângulo e false caso contrário.
+
 const ang1 = 100
 const ang2 = 70
 const ang3 = 10
