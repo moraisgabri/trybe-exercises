@@ -1,3 +1,6 @@
+// triangulo retangulo com asteriscos, com altura
+// pre definida
+
 n = 5
 container = ''
 
