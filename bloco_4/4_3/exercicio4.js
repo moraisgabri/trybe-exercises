@@ -7,8 +7,7 @@ let posicaoInicial = qtdeLinhas
 let qtdeAsteriscos = 1
 
 
-for(let i = 1; i <= qtdeLinhas ; i++)
-{
+for(let i = 1; i <= qtdeLinhas ; i++) {
   container = ' '.repeat(posicaoInicial - 1) + '*'.repeat(qtdeAsteriscos)
   console.log(container)
   posicaoInicial-=1
