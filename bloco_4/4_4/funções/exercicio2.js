@@ -7,7 +7,6 @@ let containerValor = 0
     if (array[i] > containerValor) {
       containerValor = array[i]
     }
-    
   }
   console.log(array.indexOf(containerValor))
 }
