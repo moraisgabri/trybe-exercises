@@ -2,14 +2,13 @@
 
 n = 5
 container = ''
-espaço = ' '
 
 
 for( let i = 0; i < n; i += 1 ) {
  container = ''
 
  for(let j = 0; j < n - (i + 1); j += 1) {
-  container += espaço
+  container += ' '
  }
 
  for(let k = 0; k <= i ; k += 1) {
