@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+
+  <script>
+    //1.
+    let ondeTo = document.getElementById('elementoOndeVoceEsta')
+    console.log(ondeTo)
+    //2.
+    ondeTo.parentNode.style.backgroundColor = "Red"
+    //3.
+    ondeTo.previousElementSibling.innerText = 'foda-se'
+    //4.
+    let pai = ondeTo.parentNode
+    console.log(pai.firstChild)
+    //5.
+    console.log(ondeTo.previousElementSibling)
+    //6.
+    console.log(ondeTo.nextSibling)
+    //7.
+    console.log(ondeTo.nextElementSibling)
+    //8.
+    console.log(pai.childNodes[5])
+    //9.
+    let outroIrmao = document.createElement('div')
+    outroIrmao.id = 'maisUmIrmão'
+    ondeTo.parentNode.appendChild(outroIrmao)
+    console.log(pai)
+    //10.
+    let filhoDeOndeTo = document.createElement('div')
+    filhoDeOndeTo.id = 'maisUmFilho'
+    ondeTo.appendChild(filhoDeOndeTo)
+    console.log(ondeTo)
+    //11.
+    let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho')
+    let primeiroNeto = document.createElement('div')
+    primeiroNeto.id = 'primeiroNeto'
+    primeiroFilhoDoFilho.appendChild(primeiroNeto)
+    console.log(primeiroFilhoDoFilho)
+    //12.
+    console.log(primeiroNeto.parentNode.parentNode.nextElementSibling)
+
+
+  </script>
+
+
+</body>
+</html>
