@@ -1,0 +1,104 @@
+Calculator
+Start with this webpage, which has inputs and buttons for things to calculate:
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset=utf-8 />
+  <title>Calculator</title>
+  </head>
+  <body>
+
+    <label>Square this number:
+      <input type="number" id="square-input" size="2">
+    </label>
+    <button id="square-button">Calculate</button>
+    <br><br>
+    
+    <label>Half this number:
+      <input type="number" id="half-input" size="2">
+    </label>
+    <button id="half-button">Calculate</button>
+    <br><br>
+    
+    <label>
+      Fraction:
+      <input type="number" id="percent1-input" size="2">
+    </label>
+    <label>
+      Whole:
+      <input type="number" id="percent2-input" size="2">
+    </label>
+    <button id="percent-button">Calculate</button>
+    <br><br>
+    
+    <label>Calculate area of circle with radius:
+      <input type="number" id="area-input" size="2">
+    </label>
+    <button id="area-button">Calculate</button> 
+    <br><br>
+    <div id="solution"></div>
+
+    <script>
+      let solution = document.getElementById('solution')
+
+      // Square root
+      let sqrInput = document.getElementById('square-input')
+      let sqrBtn = document.getElementById('square-button')
+
+      function squareNumber(number) {
+        let result = num * num
+        return result
+      } 
+    
+      sqrBtn.addEventListener('click', function() {
+        let num = sqrInput.value
+        solution.innerText = squareNumber(num)
+      })
+
+      // Half number
+      let halfInput = document.getElementById('half-input')
+      let halfBtn = document.getElementById('half-button')
+
+      function halfNumber(num) {
+        let result = num / 2
+        return result
+      }
+
+      halfBtn.addEventListener('click', function() {
+        let num = halfInput.value
+        solution.innerText = halfNumber(num)
+      })
+
+      // Fraction
+      let fctnInput = document.getElementById('percent1-input')
+      let wholeInput = document.getElementById('percent2-input')
+      let fctnBtn = document.getElementById('percent-button')
+      
+      function fraction(fctn, whole) {
+        let result = whole / fctn
+        return result
+      }
+
+      fctnBtn.addEventListener('click', function() {
+        let fctn = fctnInput.value
+        let whole = wholeInput.value
+        solution.innerText = fraction(fctn, whole)
+      })
+
+      // Area of Circle
+      let areaInput = document.getElementById('area-input')
+      let areaBtn = document.getElementById('area-button')
+
+      function circleArea(rad) {
+        let result = (rad * rad) * Math.PI
+        return result
+      }
+
+      areaBtn.addEventListener('click', function() {
+        let radius = areaInput.value
+        solution.innerText = circleArea(radius)
+      })
+
+    </script>
+  </body>
+</html>
