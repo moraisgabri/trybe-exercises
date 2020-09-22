@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(181, 232, 255);
+}
+
+.header {
+  padding: 10px 10px;
+  max-width: 32%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px black;
+  text-align: left;
+  background-color: rgb(252, 255, 214);
+}
+
+form {
+  max-width: 55%;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: rgb(252, 255, 214);
+  padding: 8px 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black ;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-left: 15%;
+  margin-top: 10px;
+  padding-bottom: 17px;
+}
