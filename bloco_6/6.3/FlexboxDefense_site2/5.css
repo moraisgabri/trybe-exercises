@@ -3,9 +3,11 @@
   justify-content: space-around;
   align-items: flex-end;
 }
+
 .tower-group-2 {
   display: flex;
-  justify-content: center;
+  just
+  ify-content: center;
 }
 .tower-group-3 {
   display: flex;
