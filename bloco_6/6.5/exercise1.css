@@ -1,0 +1,24 @@
+body {
+ margin: 0px 35px
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+
+}
+
+p {
+  font-size:  1.4rem;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+figure {
+    margin: 0;
+}
