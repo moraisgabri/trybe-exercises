@@ -153,3 +153,40 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  body {
+    padding: none;
+  }
+
+  #header {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  #navigation {
+    margin-left: 7px;
+    margin-top: 3px;
+    max-width: 90%;
+  }
+
+  #navigation ul {
+    display: flex;
+    flex-flow: column wrap;
+    border-right: none;
+  }
+
+  #navigation li a{
+    font-size: 1rem;
+    width: 50%;
+    padding: 2px;
+    border: none;
+  }
+
+  #aside {
+    display: none;
+  }
+
+  #content img {
+    height: 280px;
+  }
+}
