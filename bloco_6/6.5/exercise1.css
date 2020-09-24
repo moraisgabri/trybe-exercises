@@ -22,3 +22,41 @@ img {
 figure {
     margin: 0;
 }
+
+.fotos {
+  display: flex;
+  flex-direction: column;
+  }
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: rgb(255, 240, 175);
+    margin: 0px 50px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: rgb(206, 252, 255);
+    margin: 0px 80px;
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 1.4rem;
+    max-width: 900px;
+  }
+  
+  .fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gato {
+    margin: 0px 30px;
+  }
+}

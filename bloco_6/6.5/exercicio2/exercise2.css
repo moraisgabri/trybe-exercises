@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px 20px;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.6rem;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+}
+
+article p {
+  font-size: 1.4rem;
+}
+
+.aside-one {
+  font-size: 0.7rem;
+  width: 50%;
+}
+
+.aside-two {
+  font-size: 0.7rem;
+  width: 50%;
+}
+
+.infos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer {
+  font-size: 0.9rem
+}
+
+footer p {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  
+  body {
+    margin: 30px;
+  }
+  
+  header p {
+    font-size: 3rem;
+  }
+
+  .aside-one {
+    font-size: 1rem;
+    width: 50%;
+  }
+  
+  .aside-two {
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  article p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1.1rem
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    margin: 50px;
+  }
+
+  header p {
+    font-size: 4rem;
+  }
+
+  header nav li{
+    font-size: 1.5rem;
+  }
+
+  .infos {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  aside ul{
+    font-size: 1rem;
+  }
+
+  article {
+    font-size: 1.5rem;
+  }
+
+  article p {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
