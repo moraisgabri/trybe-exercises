@@ -1,4 +1,3 @@
-    
 const assert = require('assert');
 
 const books = [
@@ -64,17 +63,11 @@ const books = [
   },
 ];
 
-function allNames() {
-  // https://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
-  String.prototype.replaceAt = function(index, replacement) {
-    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
-  }
-  const onlyNames = (result, element) =>  result +` ${element.author.name},`
-  const names = books.reduce(onlyNames, "Nomes:")
-  const index = names.length - 1
-  return names.replaceAt((index), '.')
+const expected_result = 43;
+
+function averageAge() {
+  const allAge = books.reduce((acc, element) => acc + (element.releaseYear - element.author.birthYear), 0)
+  return allAge/books.length
 }
 
-console.log(allNames())
-
-assert.deepStrictEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");
+assert.equal(averageAge(), expected_result);
