@@ -4,8 +4,7 @@ const myList = [1, 2, 3]
 
 // escreva swap abaixo
 
-const swap = arr => arr = [arr[2], arr[1], arr[0]]
-
+const swap = arr => { const [a, b, c] = arr; arr = [c, b, a]; return arr}
 const swappedList = swap(myList)
 
 assert.strictEqual(swappedList[0], 3)
