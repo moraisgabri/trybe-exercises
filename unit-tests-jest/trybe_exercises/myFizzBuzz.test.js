@@ -1,4 +1,4 @@
-const myFizzBuzz = require('./fizzBuzz')
+const myFizzBuzz = require('./myFizzBuzz')
 
 describe('myFizzBuzz test suit', () => {
   it('3 and 5 must return fizzbuzz', () => {
